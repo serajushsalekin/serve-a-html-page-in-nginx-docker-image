@@ -8,7 +8,7 @@ RUN apt install nginx -y
 COPY index.html /var/www/html/index.nginx-debian.html
 CMD ["nginx","-g","daemon off;"]
 ~~~
-So ubutu used as a base image and by second layer I updated it. Third layer I installed nginx. I prepare a custom html file. As my nginx serve index.nginx-debian.html file, so i have to replace it with my custom index.html. Nginx is already configured to serve that file.
+So ubuntu is used as a base image and by second layer I updated it. Third layer I installed nginx. I prepare a custom html file. As my nginx serve index.nginx-debian.html file, so i have to replace it with my custom index.html. Nginx is already configured to serve that file.
 
 To build:
 ```zsh
